@@ -39,6 +39,13 @@ class Clients extends React.Component {
    render() {
       return (
          <table>
+            <tr>
+               <td>Id</td>
+               <td>Name</td>
+               <td>Age</td>
+               <td>Order Id</td>
+               <td>EDIT</td>
+            </tr>
             {clients.map((value, key) => {
                return (
                   <tr>
