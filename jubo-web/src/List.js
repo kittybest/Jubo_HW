@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Table } from 'reactstrap';
-//import './List.css'
+//import { Label } from 'reactstrap';
+import './List.css';
 
 var clients = [
    {
@@ -49,8 +50,8 @@ class ClientInfo extends React.Component {
             <p><label>ID: </label>{this.props.id}</p>
             <p><label>NAME: </label>{this.props.name}</p>
             <p><label>AGE: </label>{this.props.age}</p>
-            <p><label>ORDERID: </label>{this.props.orderId}</p>
-            <p><label>MESSAGE: </label>{this.props.message}</p>
+            <p><label>ORDERID: </label><input type="text" value={this.props.orderId} /></p>
+            <p><label>MESSAGE: </label><input type="text" value={this.props.message} /></p>
          </div>
       );  
    } 
